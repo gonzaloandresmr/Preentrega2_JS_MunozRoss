@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cotizador de Préstamos Bancarios</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+
+    <h1>Cotizador de Préstamos Bancarios</h1>
+
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" placeholder="Ingrese su nombre" required>
+    <label for="monto">Cantidad de dinero:</label>
+    <input type="number" id="monto" placeholder="Ingrese la cantidad de dinero" required>
+    <label for="anhos">Plazo en años:</label>
+    <input type="number" id="anhos" placeholder="Ingrese el plazo en años" required>
+    <label for="tipo">Tipo de crédito:</label>
+    <select id="tipo">
+      <option value="hipotecario">Hipotecario</option>
+      <option value="consumo">Consumo</option>
+    </select>
+
+    <button onclick="calcularCuotas()">Calcular</button>
+    <div id="resultado"></div>
+
+    <div id="solicitudesAnteriores"></div>
+    
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
