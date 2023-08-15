@@ -5,11 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cotizador de Préstamos Bancarios</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 </head>
 <body>
   <div class="container">
 
     <h1>Cotizador de Préstamos Bancarios</h1>
+    <p id="valorDolar">Valor del Dólar: Cargando...</p>
 
     <label for="nombre">Nombre:</label>
     <input type="text" id="nombre" placeholder="Ingrese su nombre" required>
@@ -23,13 +25,14 @@
       <option value="consumo">Consumo</option>
     </select>
 
-    <button onclick="calcularCuotas()">Calcular</button>
+    <button id="boton" onclick="calcularCuotas()">Calcular</button>
     <div id="resultado"></div>
 
     <div id="solicitudesAnteriores"></div>
     
   </div>
   <script src="script.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </body>
 </html>
 
